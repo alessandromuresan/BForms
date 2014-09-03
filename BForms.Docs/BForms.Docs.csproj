@@ -461,7 +461,7 @@
     <Content Include="Scripts\BForms\Stylesheets\bforms.core.scss" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RequireJS.config" />
+    <None Include="RequireJS.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Footer.cshtml" />
@@ -846,19 +846,13 @@
     <Content Include="Views\Docs\Grid\Source\_JavascriptGrid.js.embed" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="RequireJS.Release.config" />
+    <None Include="RequireJS.Release.json" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\BForms\Widgets\Utils\bforms.themeSelect.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Themes.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\BForms\RequireJS.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Scripts\BForms\RequireJS.Release.config" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Docs\Overview\_CssHelpers.cshtml" />
@@ -1740,6 +1734,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Scripts\BForms\Stylesheets\bforms.controlpanel.scss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Scripts\BForms\RequireJS.json" />
+    <Content Include="Scripts\BForms\RequireJS.Release.json" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
