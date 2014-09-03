@@ -1,4 +1,4 @@
-﻿@using RequireJS
+﻿@using RequireJsNet
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,12 +49,16 @@
     </div>
 
     
-    @Html.RenderRequireJsSetup(Url.Content("~/Scripts"),
-            Url.Content("~/Scripts/bforms/components/requirejs/require.js"),
-            new[]
-            {
-                "~/Scripts/BForms/RequireJS.config",
-                "~/RequireJS.config"
-            })
+    @Html.RenderRequireJsSetup(
+            new RequireRendererConfiguration
+                {
+                    BaseUrl = Url.Content("~/Scripts"),
+                    RequireJsUrl = Url.Content("~/Scripts/bforms/components/requirejs/require.js"),
+                    ConfigurationFiles = new[]
+                    {
+                        "~/Scripts/BForms/RequireJS.config",
+                        "~/RequireJS.config"
+                    }
+                });
 </body>
 </html>
