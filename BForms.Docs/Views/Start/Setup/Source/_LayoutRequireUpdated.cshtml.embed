@@ -13,8 +13,8 @@
         Url.Content("~/Scripts/bforms/components/requirejs/require.js"),
         new []
         {
-            "~/Scripts/BForms/RequireJS.config",
-             "~/RequireJS.config"	// added for extra configuration
+            "~/Scripts/BForms/RequireJS.json",
+             "~/RequireJS.json"	// added for extra configuration
         })
     }
     else
@@ -23,8 +23,8 @@
         Url.Content("~/Scripts/bforms/components/requirejs/require.js"),
         new []
         {
-            "~/Scripts/BForms/RequireJS.Release.config",
-             "~/RequireJS.Release.config"	// added for extra configuration
+            "~/Scripts/BForms/RequireJS.Release.json",
+             "~/RequireJS.Release.json"	// added for extra configuration
         })
     }
 

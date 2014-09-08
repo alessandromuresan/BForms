@@ -873,9 +873,6 @@
     <Content Include="Views\Start\Setup\Source\_LayoutCss.cshtml.embed" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Start\Setup\Source\_BaseController.cs.embed" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="Views\Start\Setup\Source\_LayoutRequire.cshtml.embed" />
   </ItemGroup>
   <ItemGroup>
