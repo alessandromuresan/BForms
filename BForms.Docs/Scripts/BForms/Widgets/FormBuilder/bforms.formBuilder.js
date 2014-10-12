@@ -1171,7 +1171,7 @@
                 {
                     selector: '.btn-warning',
                     handler: function (e, data) {
-                        $formSettings.find('form').bsForm('reset');
+                        $form.bsForm('reset');
                     },
                     parse: true,
                     validate: true
@@ -1343,8 +1343,12 @@
 
             var options = this._getOptionsFromSelectItems(items);
 
+            var $initialValue = data.$form.find('[name="InitialValue.SelectedValues"]');
+
             $select.html(options);
             $select.select2('val', '');
+
+            $initialValue.html(options);
         }
 
     };
@@ -1366,13 +1370,13 @@
 
         } else {
 
-            return;
-
             var items = this._getSelectItemsFromSavedProperties(parsedForm, 'Items.SelectedValues');
 
             var options = this._getOptionsFromSelectItems(items);
 
-            var data = items.map(function (item) {
+            var $initialValues = data.$form.find('[name="InitialValue.SelectedValues"]');
+
+            var itemsData = items.map(function (item) {
                 return {
                     id: item,
                     text: item
@@ -1381,8 +1385,9 @@
 
             $select.filter('select').html(options);
             $select.select2('val', '');
-        }
 
+            $initialValues.html(options);
+        }
     };
 
     FormBuilder.prototype._handleListBoxPropertiesSave = function (uid, data) {

@@ -58,7 +58,7 @@ namespace BForms.FormBuilder
             DefaultProperties.Label = "New Single select";
         }
 
-       // [FormBuilderPropertiesTab(Glyphicon = Glyphicon.Cog)]
+        [FormBuilderPropertiesTab(Glyphicon = Glyphicon.Cog)]
         [Display(Name = "Select properties")]
         public SingleSelectControlProperties Properties { get; set; }
     }
@@ -74,7 +74,7 @@ namespace BForms.FormBuilder
             DefaultProperties.Label = "New Listbox";
         }
 
-       // [FormBuilderPropertiesTab(Glyphicon = Glyphicon.Cog)]
+        [FormBuilderPropertiesTab(Glyphicon = Glyphicon.Cog)]
         [Display(Name = "Listbox properties")]
         public MultipleSelectControlProperties Properties { get; set; }
     }
@@ -90,7 +90,7 @@ namespace BForms.FormBuilder
             DefaultProperties.Label = "New Taglist";
         }
 
-      //  [FormBuilderPropertiesTab(Glyphicon = Glyphicon.Cog)]
+        [FormBuilderPropertiesTab(Glyphicon = Glyphicon.Cog)]
         [Display(Name = "Taglist properties")]
         public MultipleSelectControlProperties Properties { get; set; }
     }
@@ -168,7 +168,7 @@ namespace BForms.FormBuilder
             DefaultProperties.Label = "New Radio button list";
         }
 
-       // [FormBuilderPropertiesTab(Glyphicon = Glyphicon.Cog)]
+        [FormBuilderPropertiesTab(Glyphicon = Glyphicon.Cog)]
         [Display(Name = "Radio list properties")]
         public RadioButtonListControlProperties Properties { get; set; }
     }

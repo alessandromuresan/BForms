@@ -143,7 +143,9 @@ namespace BForms.FormBuilder
         [Description("add")]
         Add = 6,
         [Description("primary")]
-        Primary = 7
+        Primary = 7,
+        [Description("theme")]
+        Theme = 8
     }
 
     public enum BsComponentType

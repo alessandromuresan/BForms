@@ -143,7 +143,7 @@
 			}
 		}
 
-		a {
+		a:not(.select2-choice) {
 			margin-left: 4px;
 			&:hover{
 				color: black;

@@ -73,7 +73,7 @@
   .form_builder .form_builder-properties h3:hover {
     border-bottom: 1px solid black;
     cursor: pointer; }
-.form_builder .form_builder-properties a {
+.form_builder .form_builder-properties a:not(.select2-choice) {
   margin-left: 4px; }
-  .form_builder .form_builder-properties a:hover {
+  .form_builder .form_builder-properties a:hover:not(.select2-choice) {
     color: black; }

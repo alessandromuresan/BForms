@@ -19,7 +19,7 @@ namespace BForms.FormBuilder
         {
             Buttons = new List<BsButtonModel>
             {
-                new BsButtonModel("Save", BsComponentStatus.Default),
+                new BsButtonModel("Save", BsComponentStatus.Theme),
                 new BsButtonModel("Reset", BsComponentStatus.Warning)
             };
         }
@@ -153,7 +153,7 @@ namespace BForms.FormBuilder
 
     public class SingleSelectControlProperties : SelectControlBaseProperties
     {
-        //[BsControl(BsControlType.DropDownList)]
+        [BsControl(BsControlType.DropDownList)]
         [Display(Name = "Initial value")]
         public BsSelectList<string> InitialValue { get; set; }
 
@@ -167,7 +167,7 @@ namespace BForms.FormBuilder
 
     public class MultipleSelectControlProperties : SelectControlBaseProperties
     {
-       // [BsControl(BsControlType.ListBox)]
+        [BsControl(BsControlType.ListBox)]
         [Display(Name = "Initial values")]
         public BsSelectList<List<string>> InitialValues { get; set; }
 
@@ -181,7 +181,7 @@ namespace BForms.FormBuilder
 
     public class RadioButtonListControlProperties : SelectControlBaseProperties
     {
-       // [BsControl(BsControlType.RadioButtonList)]
+        [BsControl(BsControlType.RadioButtonList)]
         [Display(Name = "Initial value")]
         public BsSelectList<int> InitialValue { get; set; }
 
